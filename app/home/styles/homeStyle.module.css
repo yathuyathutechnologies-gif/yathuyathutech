@@ -1,0 +1,330 @@
+.container {
+    position: relative;
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstsection {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /*background-color: antiquewhite;*/
+}
+
+.topNavBar {
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    width: 100vw;
+    height: 70px;
+    /* display: none; */
+}
+
+.menuContainer {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.brand {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    z-index: 2;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* Menu button */
+.menu {
+    position: absolute;
+    right: 0;
+    width: 220px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    z-index: 2;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 24px;
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+/* Menu items container */
+.menuItems {
+    position: absolute;
+    right: 100px;
+    /* start exactly at left edge of menu */
+    top: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+
+    /* hidden state */
+    /* transform: translateX(100%); */
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-size:20 ;
+}
+
+
+/* Show on hover */
+.menuContainer:hover .menuItems {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Items */
+.menuItems li {
+    list-style: none;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menuItems li:hover {
+    color: black;
+}
+
+.secondsection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 100px;
+    font-weight: bolder;
+    flex-direction: row;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 150px;
+}
+
+.firstRow {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    /*background-color: rgba(172, 255, 47, 0.795);*/
+    position: relative;
+    justify-content: flex-start;
+}
+
+.firstRowTextContainer {
+    /*background-color: yellow;*/
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.calculatedSpacing {
+    height: 100%;
+
+}
+
+
+
+.videoLandingPoint {
+    width: 150px;
+    height: 100px;
+    /*background-color: rgba(240, 255, 255, 0.527);*/
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secondRow {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    height: 200px;
+    padding: 0 20px;
+    /*background-color: rgba(255, 47, 134, 0.795);*/
+    position: relative;
+    justify-content: flex-start;
+    height: 100px;
+    margin: 40px 0px;
+}
+
+
+.videoContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}
+
+.thirdRow {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    height: 200px;
+    padding: 0 20px;
+    background-color: rgba(78, 47, 255, 0);
+    position: relative;
+    justify-content: flex-start;
+
+    height: 100px;
+    margin: 0px 0px;
+    /*background-color: yellow;*/
+}
+
+.secondVideoContainer {
+    position: relative;
+    width: 150;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin-right: 30px;
+}
+
+.slideShowcontainer {
+    width: 150px;
+    height: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.firstText {
+    opacity: 0.5;
+    transform: translateY(100);
+}
+
+.secondText {
+    opacity: 0;
+    transform: translateY(100);
+}
+
+.thirdText {
+    opacity: 0;
+    transform: translateY(100);
+}
+
+.fourthText {
+    opacity: 0;
+    transform: translateY(100);
+}
+
+.fifthText {
+    opacity: 0;
+    transform: translateY(100);
+}
+
+.sixthText {
+    opacity: 0;
+    transform: translateY(200);
+}
+
+.aboutSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px 15px;
+}
+
+.Aboutontainer {
+    background-color: yellowgreen;
+    width: 100%;
+    height: 70%;
+}
+
+.parteners {
+    background-color: aliceblue;
+    width: 100%;
+    height: 30%;
+}
+
+.serviceSection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(251, 255, 192);
+}
+
+.iphoneSceneContainer {
+    position: absolute;
+    transform: translateY(420vh) translateX(-10vw);
+    z-index: 1000;
+    height: 100vh;
+    width: 50vw;
+    opacity: 0;
+    pointer-events: none;
+    left: 0px;
+    border: 1px solid black;
+    /* display: none; */
+}
+
+.storyTellingSection {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.stroryPhrase{
+    position: absolute;
+    left    : 0;
+    padding: 150px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    font-size: 24px;
+    font-weight:normal;
+}
+/* .line {
+  opacity: 0;
+  transform: translateY(50px);
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.line.highlight {
+  color: #ff7a00;
+  font-weight: 700;
+} */
+
+.firstStoryVideo {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  width: 50vw;
+  height: 85vh;
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+  transform: translateX(48vw);
+}
+.video {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;           /* hidden by default */
+  transition: opacity 0.8s ease;
+}
+
+.secondStoryTelling{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}

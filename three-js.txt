@@ -1,0 +1,48 @@
+adding 3d models
+npm install three @react-three/fiber @react-three/drei
+download 3d model  from scetchfab.com in gif format
+
+import textures, .bin and .giIf into public project folder.
+in .gItf search for buffers,
+rename the items
+change url to the changed value of the items.
+
+CONVERT the gItf into a react component, 
+first move to public folder in command line
+cd public
+then run command
+ - npx gltfjsx Clothes.gltf
+
+inside the created jsx file, export the default function
+
+
+In the componetn u want to use the 3d,
+ import suspense from react
+import {suspense} from 'react'
+import {canvas} from '@greact-three/fiber'
+import {orbitControls} from '@react-three/drei'
+
+//import the 3d
+import clothes
+
+<Canvas>
+	<ambientLight intensity={2}/>
+	<orbitControls/>
+	<Suspense fallback={null>
+		<clothes/>
+	</Suspense>
+
+//add some light for realistic look
+	<Environment preset='sunset'/>
+<Canvas>
+
+//css
+canvas {
+height:100vh;
+
+}
+
+
+
+
+procedures for using .glb file

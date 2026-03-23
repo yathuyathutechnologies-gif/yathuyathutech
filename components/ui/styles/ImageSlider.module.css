@@ -1,0 +1,31 @@
+.slider {
+  position: relative;  /* must be relative for fill */
+  width: 100%;        /* full viewport width */
+  height: 100%;       /* full viewport height, or whatever height you need */
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 0.8s ease;
+
+  will-change: opacity;
+}
+
+.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* hidden but still loads */
+.preload {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
